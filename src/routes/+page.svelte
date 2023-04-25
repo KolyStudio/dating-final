@@ -1,6 +1,3 @@
-<script>
-	import pseudos from './sitemap-0.xml/pseudos';
-</script>
 
 <svelte:head>
 	<title>Ma Page privée - Page d'Accueil</title>
