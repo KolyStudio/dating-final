@@ -1,5 +1,5 @@
 <script>
-	import pseudos from './sitemap-2.xml/pseudos';
+	import pseudos from './sitemap.xml/pseudos';
 </script>
 
 <svelte:head>
