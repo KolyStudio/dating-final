@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://monprivee.me/sitemap-2.xml
+Sitemap: https://monprivee.me/sitemap.xml

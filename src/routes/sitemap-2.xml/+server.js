@@ -24,9 +24,6 @@ const date = dayjs().format('YYYY-MM-DD');
   ${pseudos.map((pseudo) =>
     `<url>
       <loc>${website}/${pseudo.name}</loc>
-      <lastmod>${pseudo.date}T16:11:06+00:00</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.7</priority>
     </url>`
     ).join('')}
   </urlset>`.trim()
