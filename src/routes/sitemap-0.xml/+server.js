@@ -5,7 +5,7 @@ const date = dayjs().format('YYYY-MM-DD');
  export async function GET() {
   const website = "https://monprivee.me"
 
-  // const data = await fetch(website);
+  const data = await fetch(website);
   const body = 
   
   `
@@ -24,7 +24,7 @@ const date = dayjs().format('YYYY-MM-DD');
   ${pseudos.map((pseudo) =>
     `<url>
       <loc>${website}/${pseudo.name}</loc>
-      <lastmod>${pseudo.date}T16:11:06+00:00</lastmod>
+      <lastmod>${date}T16:11:06+00:00</lastmod>
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>`
