@@ -5,7 +5,7 @@ const date = dayjs().format('YYYY-MM-DD');
  export async function GET() {
   const website = "https://maprivee.club"
 
-  const data = await fetch(website);
+  // const data = await fetch(website);
   const body = 
   
   `
