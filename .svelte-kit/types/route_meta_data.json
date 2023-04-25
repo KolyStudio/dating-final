@@ -43,5 +43,8 @@
 	"invitationi/[id]": [],
 	"test/[id]": [],
 	"postback": [],
-	"exeke/[id]": []
+	"exeke/[id]": [],
+	"sitemap-2.xml": [
+		"src/routes/sitemap-2.xml/+server.js"
+	]
 }
