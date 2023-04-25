@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 const date = dayjs().format('YYYY-MM-DD');
  
  export async function GET() {
-  const website = "https://monprivee.me"
+  const website = 'https://mapagesecrete.com'
 
   const data = await fetch(website);
   const body = 
@@ -14,7 +14,7 @@ const date = dayjs().format('YYYY-MM-DD');
       xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xhtml="https://www.w3.org/1999/xhtml"
       xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
-      // xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
+      xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
       xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
       xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
