@@ -46,5 +46,8 @@
 	"exeke/[id]": [],
 	"sitemap-2.xml": [
 		"src/routes/sitemap-2.xml/+server.js"
+	],
+	"sitemap.xml": [
+		"src/routes/sitemap.xml/+server.js"
 	]
 }
