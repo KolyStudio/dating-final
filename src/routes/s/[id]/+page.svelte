@@ -37,7 +37,7 @@
 	let api =
 	  `https://website.api.tikt.net/register?ai=31778&aci=SNAP&t1=` +
 	  date +
-	  `&sg=2&us=0&ni=1&sn=wl-myclub&ap.fn=Sarah&ap.age=22&pid=https://i.ibb.co/RcCqFTr/profil.jpg`;
+	  `&sg=3&us=0&ni=1&sn=wl-myclub&ap.fn=Sarah&ap.age=22&pid=https://i.ibb.co/RcCqFTr/profil.jpg`;
 	let questions = [
 	  { id: 0, text: `18 ans` },
 	  { id: 1, text: `19 ans` },
