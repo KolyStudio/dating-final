@@ -12,7 +12,7 @@
 	import { page } from "$app/stores";
 	import dayjs from "dayjs";
 
-	let timeLeft = '599'; // Temps restant en secondes (3 heures = 3 * 60 * 60)
+	let timeLeft = '1799'; // Temps restant en secondes (3 heures = 3 * 60 * 60)
   	let interval;
   
 	const date = dayjs().format("DD/MM/YYYY");
@@ -37,7 +37,7 @@
 	let api =
 	  `https://website.api.tikt.net/register?ai=31778&aci=DIRECT&t1=` +
 	  date +
-	  `&sg=3&us=0&ni=1&sn=wl-myclub&ap.fn=Sarah&ap.age=22&pid=https://i.ibb.co/RcCqFTr/profil.jpg`;
+	  `&sg=3&us=0&apm=3&ni=1&sn=wl-myclub&ap.fn=Sarah&ap.age=22&pid=https://i.ibb.co/RcCqFTr/profil.jpg`;
 	let questions = [
 	  { id: 0, text: `18 ans` },
 	  { id: 1, text: `19 ans` },
@@ -166,7 +166,7 @@
       localStorage.setItem('timeLeft', timeLeft);
 
       if (timeLeft <= 0) {
-        timeLeft = 599; // Réinitialiser le compteur à 3 heures
+        timeLeft = 1799; // Réinitialiser le compteur à 3 heures
         localStorage.setItem('timeLeft', timeLeft);
       }
     }, 1000);
@@ -206,7 +206,11 @@
   }
   </script>
   
+
+
   <svelte:head>
+
+
 	<title>{titre}</title>
   
 	<meta
@@ -246,19 +250,24 @@
   data-host="https://api.tinybird.co"
   data-token="p.eyJ1IjogIjBlMWFlNDA1LTM2OTMtNGYyMS1iM2FiLTBiOWI0NDk1ZWExNyIsICJpZCI6ICIyNzg1MzMyMS0yZmJmLTQyODMtYjBkMS05MWU1ZjBkZDI3OWEifQ.ZYC9VN50FVnvs0Uibbz-QMras5Ht5gzg3yAKPM17eIM"
 />
+
+<script async src="https://c.opfourpro.com/8/js/script.js?id=wOa6H" />
+
   </svelte:head>
 
   
   
   <h1 class="text-center font-bold uppercase text-[#f4f3ff] fixed">{prenom}</h1>
-  <div class="hidden">
+  <div class="fixed text-[#f4f3ff]">
 	  Accéder à la page privée de {prenom} pour consulter sa présentation et ses photos. {prenom} répond
 	  généralement aux messages privés en moins d'une heure.
   </div>
   <div class="relative lg:w-5/12 lg:m-auto">
 
-	<div class="font-semibold py-1.5 text-center bg-[#e6d0fb] text-[#b466ff] text-sm sticky top-0 z-[1000] shadow-xl">🚨 FIN DES INSCRIPTIONS GRATUITES DANS {formatTime(timeLeft)}</div>
-	  <div class="flex relative w-full justify-center rounded-full mt-4">
+	<div class="font-semibold py-1.5 text-center bg-[#e6d0fb] text-[#b466ff] text-sm sticky top-0 z-[1000] shadow-xl">🚨 FERMETURE DES INSCRIPTIONS DANS {formatTime(timeLeft)}</div>
+	  
+	
+	<div class="flex relative w-full justify-center rounded-full mt-8">
 		  <div class="flex justify-center absolute right-0 left-0 top-[10px]">
 			  <div
 				  class="text-white fade-inn rounded-lg  bg-gradient-to-t from-[#22d738] to-[#22d738]/80 [text-shadow:_0_2px_5px_#22d738]   px-3 py-1 text-center text-xs font-semibold uppercase"
@@ -296,7 +305,7 @@
 	  <a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 	  </div>
   
-	  <div on:click={showDeux}
+	  <div on:click={showDeux} id="decl"
 	  class="cursor-pointer  bg-gradient-to-t from-[#b466ff] to-[#e26bff] [text-shadow:_0_2px_5px_#a44fde] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-xl my-2 space-x-4"
 	  >
 	  ME CONTACTER MAINTENANT
@@ -325,7 +334,7 @@
 		  <h2 class="font-bold text-[#b466ff]">COMMENT ME RENCONTRER EN RÉEL ?</h2>
 		  <p class="py-2  text-sm">
 			  Envoie-moi une petite photo sur{' '}
-			  <span on:click={showDeux} class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
+			  <span on:click={showDeux} id="decl" class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
 				 My Club en cliquant ici 
 			  </span>{' '}
 			  et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai un message, donc
@@ -351,7 +360,7 @@
 		<a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 		</div>
 
-		<div on:click={showDeux}
+		<div on:click={showDeux} id="decl"
 
 	  class="cursor-pointer  bg-gradient-to-t from-[#b466ff] to-[#e26bff] [text-shadow:_0_2px_5px_#a44fde] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-xl my-2 space-x-4"
 	  >
@@ -407,7 +416,7 @@
 		<a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 		</div>
   
-		<div on:click={showDeux}
+		<div on:click={showDeux} id="decl"
 
 	  class="cursor-pointer  bg-gradient-to-t from-[#b466ff] to-[#e26bff] [text-shadow:_0_2px_5px_#a44fde] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-xl my-2 space-x-4"
 	>
@@ -443,7 +452,9 @@
 			  Afin de ne parler qu'à des majeurs, je ne souhaite parler qu'aux
 			  hommes inscrits.{" "}🔞
 			</div>
+			
 		  </div>
+
 		  <div class="lg:w10/12 w-11/12 m-auto ">
 			<div
 			  class="w-10/12 m-auto justify-center text-center text-[#b466ff] font-semibold mt-2"
@@ -452,120 +463,14 @@
 				class="underline">chat</span
 			  > 😏
 			</div>
-			<form use:form>
-			  <div class="flex items-center  justify-center  my-4">
-				<div
-				  class="bg-gradient-to-t from-[#b466ff] to-[#e26bff] text-white w-10 h-10 rounded-l-lg p-1.5 text-center font-semibold text-xl"
-				>
-				  1
-				</div>
-				<select
-				  bind:value={age}
-				  use:validators={[required]}
-				  placeholder="ton âge"
-				  class=" pl-2 text-lg w-9/12 rounded-r-lg h-10  text-black border border-"
-				  on:change={() => (answer = "")}
-				>
-				  <option class="text-gray-400" value="" disabled selected
-					>ton âge</option
-				  >
-				  {#each questions as question}
-					<option value={question}>
-					  {question.text}
-					</option>
-				  {/each}
-				</select>
-			  </div>
-  
-			  <div class="flex items-center justify-center  my-4">
-				<div
-				  class="bg-gradient-to-t from-[#b466ff] to-[#e26bff] text-white w-10 h-10 rounded-l-lg p-1.5 text-center font-semibold text-xl"
-				>
-				  2
-				</div>
-				<input
-				  bind:value={mail}
-				  id="email"
-				  type="email"
-				  name="email"
-				  use:validators={[required, email]}
-				  placeholder="ton adresse email "
-				  class="pl-2 text-lg w-9/12 rounded-r-lg h-10 border  text-black"
-				/>
-			  </div>
-  
-			  <Hint
-				for="email"
-				on="email"
-				class="rounded text-sm text-center border-[#ef476f] border text-[#ef476f] p-1 w-[90%] m-auto mt-2"
-			  >
-				Merci de renseigner une adresse email valide.
-			  </Hint>
-  
-			  <div class="flex justify-center items-center  my-4">
-				<div
-				  class="bg-gradient-to-t from-[#b466ff] to-[#e26bff] text-white w-10 h-10 rounded-l-lg p-1.5 text-center font-semibold text-xl"
-				>
-				  3
-				</div>
-				<input
-				  bind:value={firstname}
-				  use:validators={[minLength(3)]}
-				  id="firstname"
-				  name="firstname"
-				  type="text"
-				  placeholder="ton prénom "
-				  class="pl-2 text-lg w-9/12 rounded-r-lg h-10 text-black border"
-				/>
-			  </div>
-  
-			  <Hint
-				for="firstname"
-				on="minLength"
-				let:value
-				class="rounded text-sm text-center border-[#ef476f] border text-[#ef476f] p-1 w-[90%] m-auto"
-			  >
-				Merci d’utiliser votre vrai prénom ou à défaut un prénom
-				réaliste :)
-			  </Hint>
-			</form>
-			<button
-			  on:click={submit}
-			  disabled={!$form.valid}
-			  class="my-3 cursor-pointer  text-white  font-semibold py-3 w-[90%] m-auto flex items-center justify-center rounded-xl space-x-4"
-			  >
-			  {#if load}
-				<svg
-				  class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-				  xmlns="http://www.w3.org/2000/svg"
-				  fill="none"
-				  viewBox="0 0 24 24"
-				>
-				  <circle
-					class="opacity-25"
-					cx="12"
-					cy="12"
-					r="10"
-					stroke="currentColor"
-					stroke-width="4"
-				  />
-				  <path
-					class="opacity-75"
-					fill="currentColor"
-					d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-				  />
-				</svg>
-			  {/if}
-			  COMMENCE À BAISER !</button
-			>
-  
-			<div
-			  class="pt-4 py-2 text-sm text-center m-auto w-12/12 text-black font-semibold  -mt-3"
-			>
-			  🚨 Entre un email qui fonctionne, et n'oublie pas de regarder les
-			  spams pour valider ton email
-			</div>
+		
+			
+	
 		  </div>
+
+		  
+		  <div id="formsnap"/>
+		
 		</div>
 	  </div>
 	</div>

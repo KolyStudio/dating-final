@@ -29,7 +29,7 @@
 					<nav class="mt-16 grid space-y-4">
 						{#each pseudos as pseudo, i}
 							<a
-								href="/{pseudo}"
+								href="/{pseudo.name}"
 								class="bg-blue-400 h-12 px-6 items-center  rounded-full transition duration-300 
  hover:border-blue-400 focus:bg-pink-50 active:bg-blue-100 text-center text-white flex justify-center font-bold"
 							>

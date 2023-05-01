@@ -8,7 +8,8 @@ export { matchers } from './client-matchers.js';
 	() => import('./nodes/5'),
 	() => import('./nodes/6'),
 	() => import('./nodes/7'),
-	() => import('./nodes/8')];
+	() => import('./nodes/8'),
+	() => import('./nodes/9')];
 
 			export const server_loads = [];
 
@@ -18,7 +19,8 @@ export { matchers } from './client-matchers.js';
 	"exeke/[id]": [4],
 	"invitation/[id]": [5],
 	"invitations/[id]": [6],
-	"test/[id]": [8],
+	"s/[id]": [8],
+	"test/[id]": [9],
 	"[id]": [3]
 };
 
