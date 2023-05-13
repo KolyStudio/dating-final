@@ -41,14 +41,7 @@ const pseudos = [
     'zarabella747',
     'micamiss931'
   ];
-  
-  console.log(names);
-  Maintenant, le tableau names contient toutes les valeurs de name extraites de la liste pseudos.
-  
-  
-  
-  
-  
+
   
   
     export default pseudos;
