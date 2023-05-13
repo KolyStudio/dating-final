@@ -184,7 +184,7 @@
 	  );
   
 	  const ipay = await fetch(
-		`https://api.ipregistry.co/` + resulta.ip + `?key=6nn8zr4k2hcwkw32`
+		`https://api.ipregistry.co/` + resulta.ip + `?key=d3vt0gu96nu3q8tq`
 	  ).then((r) => r.json());
 	  if (!ipay.carrier.name) {
 		monip = `vers ` + ipay.location.city;
