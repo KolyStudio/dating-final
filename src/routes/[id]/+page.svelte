@@ -217,6 +217,7 @@
 	  name="description"
 	  content={`Accéder à la page privée de ${prenom} pour consulter sa présentation et ses photos. ${prenom} répond généralement aux messages privés en moins d'une heure.`}
 	/>
+	
 	<link rel="icon" href="favicon.png" />
   
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
