@@ -337,7 +337,7 @@
 		  <h2 class="font-bold text-[#b466ff]">COMMENT ME RENCONTRER EN RÉEL ?</h2>
 		  <p class="py-2">
 			  Envoie-moi une petite photo sur{' '}
-			  <a href="href={linkos}" id="decl" class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
+			  <a href={linkos} id="decl" class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
 				 My Club en cliquant ici 
 			  </a>{' '}
 			  et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai un message, donc
@@ -363,7 +363,7 @@
 		<a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 		</div>
 
-		<a href="href={linkos}" id="decl"
+		<a href={linkos} id="decl"
 
 	  class="cursor-pointer shake bg-gradient-to-t from-[#22d738] to-[#22d738]/80 [text-shadow:_0_2px_5px_#22d738] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
 	  >
