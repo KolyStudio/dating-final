@@ -261,7 +261,7 @@
 
   <div class="relative lg:w-5/12 lg:m-auto">
 
-	<div class="font-semibold py-1.5 text-center bg-[#FEE7CF] text-[#E5726B] text-sm sticky top-0 z-[1000] shadow-xl">🚨TON ACCÈS PRIVÉE EST RÉSERVÉ PENDANT {formatTime(timeLeft)}</div>
+	<div class="font-semibold py-1.5 text-center bg-[#FEE7CF] text-[#E5726B] text-sm sticky top-0 z-[1000] shadow-xl">🚨TON ACCÈS PRIVÉE EST GRATUIT PENDANT {formatTime(timeLeft)}</div>
 	  
 	
 	<div class="flex relative justify-center rounded-full w-[200px] h-[225px] m-auto">
