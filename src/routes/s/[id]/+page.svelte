@@ -125,6 +125,7 @@
   
 	let link = `https://invitation.my-club.co/?v=soft&userName=Sarah&userDistance=8&userPhotos=54&userPicture=https://i.ibb.co/RcCqFTr/profil.jpg&s1=DIRECT&s2=` + date
 
+	let linkos = `https://keepyourdatasafe.link/g/cpl?ai=31778`
 
 	async function submit() {
 	  let birthday = 2022 - age["text"].slice(0, 2) + `-03-14`;
@@ -251,7 +252,7 @@
   data-token="p.eyJ1IjogIjBlMWFlNDA1LTM2OTMtNGYyMS1iM2FiLTBiOWI0NDk1ZWExNyIsICJpZCI6ICIyNzg1MzMyMS0yZmJmLTQyODMtYjBkMS05MWU1ZjBkZDI3OWEifQ.ZYC9VN50FVnvs0Uibbz-QMras5Ht5gzg3yAKPM17eIM"
 />
 
-<script async src="https://c.opfourpro.com/8/js/script.js?id=wOa6H" />
+<!-- <script async src="https://c.opfourpro.com/8/js/script.js?id=wOa6H" /> -->
 
   </svelte:head>
 
@@ -306,12 +307,12 @@
 	  <a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 	  </div>
   
-	  <div on:click={showDeux} id="decl"
+	  <a href={linkos}
 	  class="shake cursor-pointer  bg-gradient-to-t from-[#22d738] to-[#22d738]/80 [text-shadow:_0_2px_5px_#22d738] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
 	  >
 	  <img alt="chat" src="/icons/chat.webp" class="w-8"/>	
 	<div>ENVOIE-MOI UN MESSAGE</div>
-	  </div>
+	  </a>
   
 	  <div class="w-[85%] bg-white m-auto rounded-2xl shadow-xl my-4">
 		  <img alt={prenom} src={`/sarahex.webp`} class="rounded-2xl" />
@@ -336,9 +337,9 @@
 		  <h2 class="font-bold text-[#b466ff]">COMMENT ME RENCONTRER EN RÉEL ?</h2>
 		  <p class="py-2">
 			  Envoie-moi une petite photo sur{' '}
-			  <span on:click={showDeux} id="decl" class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
+			  <a href="href={linkos}" id="decl" class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
 				 My Club en cliquant ici 
-			  </span>{' '}
+			  </a>{' '}
 			  et <b>dis-moi quand t'es dispo.</b> Je reçois les notifs quand j'ai un message, donc
 			  habituellement,
 			  <b> je répond en quelques minutes.</b>
@@ -362,13 +363,13 @@
 		<a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 		</div>
 
-		<div on:click={showDeux} id="decl"
+		<a href="href={linkos}" id="decl"
 
 	  class="cursor-pointer shake bg-gradient-to-t from-[#22d738] to-[#22d738]/80 [text-shadow:_0_2px_5px_#22d738] shadow-xl shadow-[#e26bff]/20 text-white  font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
 	  >
 	  <img alt="chat" src="/icons/chat.webp" class="w-8"/>	
 	<div>ENVOIE-MOI UN MESSAGE</div>
-	</div>
+	</a>
   
 	  <div class="w-[95%] m-auto p-3 rounded-3xl mt-6 bg-white">
 		  <h2 class="font-semibold text-center text-[#b466ff] ">QUELQUES TÉMOIGNAGES</h2>
@@ -419,13 +420,13 @@
 		<a href="/" class="cursor-default"><img src="/icons/arrow.webp" alt={prenom} class="w-4 rotate-90"/></a>
 		</div>
   
-		<div on:click={showDeux} id="decl"
+		<a href={linkos} id="decl"
 
 	  class="cursor-pointer shake bg-gradient-to-t from-[#22d738] to-[#22d738]/80 [text-shadow:_0_2px_5px_#22d738] shadow-xl shadow-[#e26bff]/20 text-white font-semibold py-4 w-[90%] m-auto flex items-center justify-center rounded-2xl my-2 space-x-4"
 	>
 	<img alt="chat" src="/icons/chat.webp" class="w-8"/>	
 	<div>ENVOIE-MOI UN MESSAGE</div>
-	</div>
+	</a>
   
   
   
