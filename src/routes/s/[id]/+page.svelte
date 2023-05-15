@@ -257,7 +257,7 @@
   </div>
   <div class="relative lg:w-5/12 lg:m-auto">
 
-	<div class="font-semibold py-1.5 text-center bg-[#e6d0fb] text-[#b466ff] text-sm sticky top-0 z-[1000] shadow-xl">🚨 ACCÈS PRIVÉE RÉSERVÉ PENDANT {formatTime(timeLeft)}</div>
+	<div class="font-semibold py-1.5 text-center bg-[#e6d0fb] text-[#b466ff] text-sm sticky top-0 z-[1000] shadow-xl">🚨 ACCÈS PRIVÉ RÉSERVÉ PENDANT {formatTime(timeLeft)}</div>
 	  <div class="flex relative w-full justify-center rounded-full mt-4">
 		  <div class="flex justify-center absolute right-0 left-0 top-[10px]">
 			  <div
