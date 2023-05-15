@@ -1,1 +1,1 @@
-export { default as component } from "../../../src/routes/saveprelinker/[id]/+page.svelte";
+export { default as component } from "../../../src/routes/test/[id]/+page.svelte";
