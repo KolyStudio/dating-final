@@ -320,7 +320,7 @@
   
 	  <div class="w-[95%] m-auto p-3 rounded-3xl my-4 pb-1">
 		  <h2 class="font-bold text-[#b466ff]">JE NE SUIS PAS UNE ESCORTE !! ❌</h2>
-		  <p class="py-2  text-sm">
+		  <p class="py-2 ">
 			  Une bonne fois pour toutes, je ne demande <b>pas d'argent,</b> je cherche juste des plans culs
 			  pour m'amuser un peu, c'est tout.
 			  <br /><br />
@@ -333,7 +333,7 @@
   
 	  <div class="w-[95%] m-auto p-3 rounded-3xl my-4 ">
 		  <h2 class="font-bold text-[#b466ff]">COMMENT ME RENCONTRER EN RÉEL ?</h2>
-		  <p class="py-2  text-sm">
+		  <p class="py-2">
 			  Envoie-moi une petite photo sur{' '}
 			  <span on:click={showDeux} class="cursor-pointer text-blue-600 font-semibold underline underline-offset-2">
 				 Chaud Passion en cliquant ici 
